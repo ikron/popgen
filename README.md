@@ -10,5 +10,5 @@ source(urlfile)
 You can load the Neurospora polymorphism data by running
 ```
 datafile <- "https://raw.github.com/ikron/popgen/master/data/ncrassa.RData"
-load(datafile)
+load(url(datafile))
 ```
