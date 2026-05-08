@@ -12,3 +12,16 @@ You can load the Neurospora polymorphism data by running
 datafile <- "https://raw.github.com/ikron/popgen/master/data/ncrassa.RData"
 load(url(datafile))
 ```
+# Data for Darwin's finches
+finchurl <- "https://raw.github.com/ikron/popgen/master/data/finch.csv"
+finch <- read.csv(finchurl, header = T, sep = ",", dec = ".")
+
+# Data for human heights
+galtonurl <- "https://raw.github.com/ikron/popgen/master/data/galton1889.csv"
+galton <- read.csv(galtonurl, header = T, sep = ",", dec = ".")
+
+# Data for the association mapping
+myY  <- read.table("https://raw.github.com/ikron/popgen/master/data/mdp_traits.txt", head = TRUE)
+myG <- read.table("https://raw.github.com/ikron/popgen/master/data/mdp_genotype_test.hmp.txt", head = FALSE)
+#A simulated trait
+simY  <- read.table"https://raw.github.com/ikron/popgen/master/data/mdp_traits_validation.txt", head = TRUE)[,-c(2:4)]
