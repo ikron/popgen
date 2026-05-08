@@ -31,3 +31,9 @@ myG <- read.table("https://raw.github.com/ikron/popgen/master/data/mdp_genotype_
 #A simulated trait
 simY  <- read.table"https://raw.github.com/ikron/popgen/master/data/mdp_traits_validation.txt", head = TRUE)[,-c(2:4)]
 ```
+## Setting up GAPIT
+Load the GAPIT functions by running
+```
+source("http://zzlab.net/GAPIT/gapit_functions.txt")
+```
+I tested this in the computer class, and at least for me installing GAPIT worked. GAPIT requires a lot of dependencies, so installing all of them takes a bit of time. 
