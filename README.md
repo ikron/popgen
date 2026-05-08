@@ -24,7 +24,7 @@ galtonurl <- "https://raw.github.com/ikron/popgen/master/data/galton1889.csv"
 galton <- read.csv(galtonurl, header = T, sep = ",", dec = ".")
 ```
 
-# Data for the association mapping
+# Data for association mapping
 ```
 myY  <- read.table("https://raw.github.com/ikron/popgen/master/data/mdp_traits.txt", head = TRUE)
 myG <- read.table("https://raw.github.com/ikron/popgen/master/data/mdp_genotype_test.hmp.txt", head = FALSE)
