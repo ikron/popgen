@@ -29,7 +29,7 @@ galton <- read.csv(galtonurl, header = T, sep = ",", dec = ".")
 myY  <- read.table("https://raw.github.com/ikron/popgen/master/data/mdp_traits.txt", head = TRUE)
 myG <- read.table("https://raw.github.com/ikron/popgen/master/data/mdp_genotype_test.hmp.txt", head = FALSE)
 #A simulated trait
-simY  <- read.table"https://raw.github.com/ikron/popgen/master/data/mdp_traits_validation.txt", head = TRUE)[,-c(2:4)]
+simY  <- read.table("https://raw.github.com/ikron/popgen/master/data/mdp_traits_validation.txt", head = TRUE)[,-c(2:4)]
 ```
 ## Setting up GAPIT
 Load the GAPIT functions by running
